@@ -88,18 +88,21 @@ a {
   position: relative;
   height: 100vh;
   width: 100%;
+  z-index: 0;
   background-image: url("C:\Users\Lingesh K\Downloads\App\client\public\peakpx.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.container::before {
+.dark{
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 1;
+  bottom: 1px;
   pointer-events: none;
   transition: all 2s ease-in;
 }
@@ -247,4 +250,38 @@ a {
   font-size: 12px;
   margin-top: 15px;
   text-align: center;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  top: 150px;
+  font-size: 72px;
+  font-family: cursive;
+  animation: updown 2s ease 0s 1 forwards;
+}
+
+@keyframes updown {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.para{
+  color: #fff;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  left: 400px;
+  top: 200px;
+  opacity: 0;
+  font-size: 20px;
+  font-weight: 600;
+  animation: updown 2s ease 1s 1 forwards;
 }

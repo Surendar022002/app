@@ -1,10 +1,12 @@
 import React from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
+import { Login } from "./Login";
+import { Routes, Route } from "react-router-dom";
 
 export const Home = () => {
   return (
-    <div className="back">
+    <>
       <header className="header">
         <nav className="navbar">
           <a href="www.google.com" className="nav-logo">
@@ -27,9 +29,23 @@ export const Home = () => {
               </a>
             </li>
           </ul>
-          <Link to={'/login'} className="btn">Login</Link>
+          <Link to={"/login"} className="btn">
+            Login
+          </Link>
         </nav>
       </header>
-    </div>
+      <section className="container">
+        <h1 className="title">McBitss</h1>
+        <p className="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+          magni obcaecati, enim sunt autem, hic atque mollitia minus cumque
+          corrupti necessitatibus exercitationem nihil qui debitis in dicta vel
+          vero maiores?
+        </p>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </section>
+    </>
   );
 };
