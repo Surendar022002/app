@@ -47,7 +47,7 @@ export const Login = () => {
   }, []);
 
   return (
-    <section className="container">
+    <div className="dark">
       <div className={`form-container ${isVisible ? "active" : ""}`}>
         <Link to={"/home"}>
           <i className="uil uil-times form-close"></i>
@@ -83,7 +83,7 @@ export const Login = () => {
             <div className="option-field">
               <span className="checkbox">
                 <input type="checkbox" id="check" />
-                <label for="check">Remember me</label>
+                <label htmlFor="check">Remember me</label>
               </span>
               <a href="www.google.com" className="forgot-pw">
                 Forgot password?
@@ -100,6 +100,6 @@ export const Login = () => {
           </div>
         </div>
       </div>
-    </section>
+      </div>
   );
 };

@@ -1,8 +1,8 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+// import { Routes, Route } from "react-router-dom";
 import { Home } from "./components/Home";
-import { SignUp } from "./components/SignUp";
-import { Login } from "./components/Login";
+// import { SignUp } from "./components/SignUp";
+// import { Login } from "./components/Login";
 import "./transition.css";
 
 const App = () => {
@@ -10,10 +10,10 @@ const App = () => {
   return (
     <div>
       <Home />
-            <Routes>
+            {/* <Routes>
               <Route path="/register" element={<SignUp />} />
               <Route path="/login" element={<Login />} />
-            </Routes>
+            </Routes> */}
     </div>
   );
 };
