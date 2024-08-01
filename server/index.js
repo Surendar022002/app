@@ -54,7 +54,7 @@ app.post("/signup", async (req, res) => {
     .then((hash) => {
       register
         .create({ name, email, password: hash })
-        .then((user) => res.json("Success"))
+        .then((user) => res.json({message:"Success",user}))
         .catch((err) => res.json(err));
     })
     .catch((err) => res.json(err));
