@@ -36,7 +36,7 @@ export const SignUp = () => {
   }, []);
 
   return (
-    <section className="container">
+    <div className="dark">
       <div className={`form-container ${isVisible ? "active" : ""}`}>
         <Link to={"/home"}>
           <i className="uil uil-times form-close"></i>
@@ -89,6 +89,6 @@ export const SignUp = () => {
           </div>
         </div>
       </div>
-    </section>
+      </div>
   );
 };
