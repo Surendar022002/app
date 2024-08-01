@@ -3,6 +3,7 @@ import "./Login.css";
 import { Link } from "react-router-dom";
 import { Login } from "./Login";
 import { Routes, Route } from "react-router-dom";
+import { SignUp } from "./SignUp";
 
 export const Home = () => {
   return (
@@ -44,6 +45,7 @@ export const Home = () => {
         </p>
         <Routes>
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<SignUp />} />
         </Routes>
       </section>
     </>
