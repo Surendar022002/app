@@ -10,7 +10,7 @@ export const Home = () => {
     <>
       <header className="header">
         <nav className="navbar">
-          <a href="www.google.com" className="nav-logo">
+          <a href="/home" className="nav-logo">
             McBitss
           </a>
 
