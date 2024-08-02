@@ -8,13 +8,13 @@ import "./transition.css";
 const App = () => {
 
   return (
-    <div>
+   <>
       <Home />
             {/* <Routes>
               <Route path="/register" element={<SignUp />} />
               <Route path="/login" element={<Login />} />
             </Routes> */}
-    </div>
+    </>
   );
 };
 
