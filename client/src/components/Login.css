@@ -16,8 +16,10 @@ a {
 }
 
 .logo{
-  height: 100px;
-  width: 200px;
+  margin-top: 25px;
+  margin-left: -100px;
+  height: 220px;
+  width: 290px;
 }
 
 .header {
@@ -356,3 +358,7 @@ h3{
   margin-top: -1%;
   margin-left: 60%;
 }
+
+
+/* -------------------section-----3------------------ */
+

@@ -5,7 +5,7 @@ import { Login } from "./Login";
 import { Routes, Route } from "react-router-dom";
 import { SignUp } from "./SignUp";
 import sec21 from "../assests/sec21.png";
-import bot from "../assests/bottom.png"
+import log from "../assests/logo_food_bg.png"
 import food1 from "../assests/tri.jpg"
 import food2 from "../assests/wings.jpg"
 
@@ -15,7 +15,7 @@ export const Home = () => {
     <>
       <header className="header">
         <nav className="navbar">
-        <img src={bot} alt="logo" className="logo"/>
+        <img src={log} alt="logo" className="logo"/>
 
           <ul className="nav-item">
             <li className="nav-item">
