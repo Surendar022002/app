@@ -8,6 +8,7 @@ axios.defaults.baseURL = "http://localhost:1100/";
 export const Login = () => {
   const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
   const [loginData, setLoginData] = useState({
     email: "",
     password: "",
@@ -18,6 +19,10 @@ export const Login = () => {
   const handleLoginData = (e) => {
     const { name, value } = e.target;
     setLoginData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const togglePassword = () => {
+    setShowPassword(!showPassword);
   };
 
   const handleSubmit = async (e) => {
@@ -69,7 +74,7 @@ export const Login = () => {
             </div>
             <div className="input-box">
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 name="password"
                 placeholder="Enter Your Password"
                 value={loginData.password}
@@ -77,7 +82,11 @@ export const Login = () => {
                 required
               />
               <i className="uil uil-lock password"></i>
-              <i className="uil uil-eye-slash pwd-hide"></i>
+              <Link onClick={togglePassword} className="pwd-hide">
+                <i
+                  className={showPassword ? "uil uil-eye" : "uil uil-eye-slash"}
+                ></i>
+              </Link>
             </div>
 
             <div className="option-field">
@@ -100,6 +109,6 @@ export const Login = () => {
           </div>
         </div>
       </div>
-      </div>
+    </div>
   );
 };

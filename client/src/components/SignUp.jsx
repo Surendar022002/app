@@ -7,12 +7,17 @@ axios.defaults.baseURL = "http://localhost:1100/";
 
 export const SignUp = () => {
   const navigate = useNavigate();
+  const [showPassword, setShowPassword] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const [signUpData, setSignUpData] = useState({
     name: "",
     email: "",
     password: "",
   });
+
+  const togglePassword = () => {
+    setShowPassword(!showPassword);
+  };
 
   const getTransition = () => {
     const timer = setTimeout(() => setIsVisible(true), 100);
@@ -69,7 +74,7 @@ export const SignUp = () => {
             </div>
             <div className="input-box">
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 name="password"
                 placeholder="Create Password"
                 value={signUpData.password}
@@ -77,7 +82,11 @@ export const SignUp = () => {
                 required
               />
               <i className="uil uil-lock password"></i>
-              <i className="uil uil-eye-slash pwd-hide"></i>
+              <Link onClick={togglePassword} className="pwd-hide">
+                <i
+                  className={showPassword ? "uil uil-eye" : "uil uil-eye-slash"}
+                ></i>
+              </Link>
             </div>
             <button className="btn">Signup Now</button>
           </form>
@@ -89,6 +98,6 @@ export const SignUp = () => {
           </div>
         </div>
       </div>
-      </div>
+    </div>
   );
 };
