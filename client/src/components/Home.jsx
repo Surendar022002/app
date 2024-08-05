@@ -16,11 +16,6 @@ export const Home = () => {
       <header className="header">
         <nav className="navbar">
         <img src={log} alt="logo" className="logo"/>
-
-          <a href="/home" className="nav-logo">
-            McBitss
-          </a>
-
           <ul className="nav-item">
             <li className="nav-item">
               <a href="www.google.com" className="nav-link">
