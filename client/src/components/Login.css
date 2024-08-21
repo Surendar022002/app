@@ -85,6 +85,10 @@ a {
   opacity: 0;
 }
 
+.transparent:hover12333 {
+  opacity: 0;
+}
+
 .container {
   position: relative;
   height: 100vh;
