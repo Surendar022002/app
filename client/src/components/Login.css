@@ -76,6 +76,8 @@ a {
 }
 
 .btn:hover {
+  background-color: #fff;
+  color: #fff;
   background-color: #000000;
   color: #000;
   font-weight: 500;
