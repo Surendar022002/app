@@ -76,10 +76,10 @@ a {
 
 .btn:hover {
   background-color: #fff;
-  color: #000;
+  color: #fff;
   font-weight: 500;
 }
-
+/* krishna */
 .transparent:hover {
   opacity: 0;
 }
@@ -94,7 +94,7 @@ a {
   background-position: center;
 }
 
-.dark{
+.dark {
   content: "";
   position: absolute;
   height: 100%;
@@ -273,7 +273,7 @@ a {
   }
 }
 
-.para{
+.para {
   color: #fff;
   width: 50%;
   text-align: center;
