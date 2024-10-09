@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
   margin: 0;
@@ -13,7 +13,7 @@ a {
   font-size: 20px;
 }
 
-.logo{
+.logo {
   margin-top: 25px;
   margin-left: -100px;
   height: 220px;
@@ -75,11 +75,12 @@ a {
   transform: scale(0.98);
 }
 
-.btn:hover {
+/* .btn:hover {
   background-color: #fff;
   color: #000;
   font-weight: 500;
-}
+} */
+/* surendar */
 
 .transparent:hover {
   opacity: 0;
@@ -91,13 +92,12 @@ a {
   width: 100%;
   z-index: 0;
   background-image: url("../assests/food_bg.jpg");
-  background-color: rgba(32, 32, 32, 0.6);               
+  background-color: rgba(32, 32, 32, 0.6);
   background-size: cover;
   background-position: center;
 }
 
-
-.dark{
+.dark {
   content: "";
   position: absolute;
   height: 100%;
@@ -276,11 +276,11 @@ a {
   }
 }
 
-.span{
+.span {
   color: yellow;
 }
 
-.para{
+.para {
   color: #fff;
   width: 50%;
   text-align: center;
@@ -296,9 +296,9 @@ a {
 
 /* -----------SECTION---------TWO-------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Varela+Round&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Varela+Round&display=swap");
 
 .container-sec2 {
   position: absolute;
@@ -308,10 +308,9 @@ a {
   background-size: cover;
   background-position: center;
   background-color: #000;
-
 }
 
-.dark-sec2{
+.dark-sec2 {
   content: "";
   position: absolute;
   height: 100%;
@@ -320,20 +319,14 @@ a {
   opacity: 1;
   bottom: 1px;
   background-color: #000;
-
-
-
 }
 
-h3{
+h3 {
   margin-top: 180px;
   margin-left: 150px;
   color: orange;
-
-
-
 }
-.sub-head{
+.sub-head {
   margin-left: 150px;
   font-size: 26px;
   font-family: "Varela Round", sans-serif;
@@ -341,7 +334,7 @@ h3{
   font-style: normal;
 }
 
-.head{
+.head {
   margin-top: 5px;
   margin-left: 144px;
   font-size: 100px;
@@ -352,11 +345,9 @@ h3{
   color: #fff;
 }
 
-.image{
+.image {
   margin-top: -1%;
   margin-left: 60%;
 }
 
-
 /* -------------------section-----3------------------ */
-
